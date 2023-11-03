@@ -1,0 +1,89 @@
+.register{
+    background-color:#EEEEEE ;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Lora', serif;
+
+    .loginimg{
+        height: 200px;
+        width: 530px;
+        margin: 250px 120px;
+    }
+
+    .form{
+
+        margin: 0;
+        .form-container{
+            margin:130px 70px;
+            
+
+            .welcome-text{
+                margin-bottom: 50px;
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .login-text{
+                margin-bottom: 50px;
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .submit-button{
+                width: 150px;
+                margin-left: 180px;
+                margin-top: 10px;
+            }
+
+            p{
+                font-size: 17px;
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+
+                a{
+                    text-decoration: none;
+                    color: #D32F2F;
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                a:hover{
+                    text-decoration: underline;
+                    color: #D32F2F;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .register {
+      .loginimg {
+        height: 100px;
+        width: 300px;
+        margin: 50px 40px;
+      }
+  
+      .form {
+        margin-left: 180px;
+        .form-container {
+          margin: -50px;
+  
+          .welcome-text {
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+          }
+
+          .login-text{
+            margin-bottom: 30px;
+            font-size: 20px;
+          }
+  
+          .submit-button {
+            width: 120px;
+            margin-left: 95px;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "username": "rinarina",
+      "password": "rinarinarina",
+      "id": 2
+    },
+    {
+      "username": "rinesa",
+      "password": "ggrabovci",
+      "id": 5
+    },
+    {
+      "username": "adigrabovci",
+      "password": "ggadi",
+      "id": 6
+    },
+    {
+      "username": "deadeag",
+      "password": "grabovcidea",
+      "id": 7
+    },
+    {
+      "username": "deadea",
+      "password": "deadea",
+      "id": 8
+    },
+    {
+      "username": "adigrabovci",
+      "password": "ggadi",
+      "id": 9
+    }
+  ]
+}
