@@ -4,47 +4,99 @@
     padding: 10px 0;
     position: absolute; /* Position the Navbar absolutely */
     top: 0;
-    left: 0; 
-    width: 100%; 
-    z-index: 1; 
+    left: 0;
+    width: 100%;
+    z-index: 1;
     border-bottom: 2px solid #D32F2F;
-
+  
     .navbar-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-      
-        .logo-link {
-          img {
-            max-width: 150px;
-          }
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+  
+      .logo-link {
+        img {
+          max-width: 150px;
         }
-      
-        .nav-links {
-          list-style: none;
-          padding: 0px;
-          display: flex;
-      
-          li {
-            margin: 0px 20px ;
-      
-            a {
-              color: #3d3c3cee;
-              text-decoration: none;
-              transition: color 0.3s;
-              white-space: nowrap;
-      
-              &:hover {
-                color: #D32F2F;
-              }
+      }
+  
+      .nav-links {
+        list-style: none;
+        padding: 0px;
+        display: flex;
+  
+        li {
+          margin: 0px 20px;
+  
+          a {
+            color: #3d3c3cee;
+            text-decoration: none;
+            transition: color 0.3s;
+            white-space: nowrap;
+  
+            &:hover {
+              color: #D32F2F;
             }
           }
         }
+      }
       
-        
+      .langbutton {
+        background-color: transparent;
+        border: none;
+        margin-right: -60px;
+        margin-top: -50px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+      .navbar-wrapper {
+
+        .logo-link {
+            img {
+              display: none;
+            }
+          }
+        .menu-icon {
+            color: white;
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+            z-index: 2; /* Ensure the icon is above other elements */
+          
+            // Other styling if needed
+          }
+          
+        ul.nav-links {
+          display: none; // Hide the navigation links by default
+          
+  
+          li {
+            background-color: transparent;
+            text-align: center;
+            margin: 10px 0;
+            
+
+            &:hover {
+                color: #D32F2F;
+            }
+          }
+  
+          &.active {
+            display: flex; // Show the navigation links when the menu is active
+            flex-direction: column; // Stack the links in a column
+          }
+        }
+        .langbutton{display: none;}
+      }
     }
   }
   

@@ -9,7 +9,7 @@ import logo from '../../assets/logo.png';
 import Grid from "@mui/material/Grid";
 
 const Navbar = () => {
-  const { lang, dispatch } = useContext(Context);
+  const {lang, dispatch} = useContext(Context);
   const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleMenu = () => {
@@ -34,12 +34,12 @@ const Navbar = () => {
             </NavLink>
           </Grid>
           <Grid item xs={12} sm={6} container justifyContent="flex-end">
-            {window.innerWidth <= 600 ? ( // Adjust the width breakpoint as needed
+            {window.innerWidth <= 600 && (
               <MenuIcon
-                className="menu-icon"
-                onClick={toggleMenu}
-              />
-            ) : null}
+              className="menu-icon"
+              onClick={toggleMenu}
+              style={{ display: 'block', color: 'white', marginTop:'-40px', marginLeft:'50px', marginRight:'50px' }}/>
+            )}
             <ul className={`nav-links ${menuVisible ? "active" : ""}`}>
               {language[lang].navbarLinks.map((obj) => (
                 <li key={obj.name}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <button onClick={changelang}>
+            <button className="langbutton" onClick={changelang}>
               <LangFlag lang={lang} />
             </button>
           </Grid>

@@ -1,0 +1,67 @@
+.aboutus {
+    background-color: #EEEEEE;
+  
+    .aboutwrapper{
+        
+
+        .about {
+            flex: 1;
+            padding: 20px;
+        
+            h1 {
+              font-size: 24px;
+            }
+        
+            p {
+              font-weight: bold;
+              font-size: 18px;
+              margin-bottom: 20px;
+            }
+        }
+
+        .more{ 
+            background-color:#D32F2F ;
+            color: white;
+            padding: 5px;
+          
+          &:hover {
+              color: #D32F2F;
+              cursor: pointer;
+              background-color: white;
+          }
+        }
+        
+          .image {
+            flex: 1;
+            position: relative;
+        
+            img {
+              max-width: 100%;
+            }
+        
+        
+        
+            .topLeftBorder {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-left: 2px solid white;
+              border-top: 2px solid white;
+              height: 32px;
+              width: 32px;
+            }
+        
+            .bottomRightBorder {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              border-right: 2px solid white;
+              border-bottom: 2px solid white;
+              height: 32px;
+              width: 32px;
+            }
+        }
+    }
+    
+}
+  

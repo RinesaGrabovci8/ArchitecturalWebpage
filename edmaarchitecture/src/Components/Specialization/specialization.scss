@@ -1,0 +1,53 @@
+.specialization{
+    background-color: #EEEEEE;
+    margin: -10 auto;
+
+    .specwrapper{
+        display: block;
+        text-align: center;
+
+        .what{
+            letter-spacing: 3px;
+            color: #3d3c3cee;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        h1{
+            color: #D32F2F  ;
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 60px;
+        }
+
+        .icons{
+            display: flex;
+            text-align: center;
+            margin-bottom: 60px;
+
+            .MuiGrid-item {
+                position: relative;
+            
+                &:hover {
+                  img {
+                    transform: translateY(-10px);
+                    transition: transform 0.5s; 
+                  }
+                }
+            }
+
+            img{
+                margin-bottom: 30px;
+            }
+
+            h3{
+                font-family: 'Nunito', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            p{
+                text-align: left;
+                margin-left: 80px;
+                font-size: 17px;
+            }
+        }
+    }
+}
