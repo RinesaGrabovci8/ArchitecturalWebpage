@@ -5,6 +5,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import Aboutus from '../../Components/Aboutus/Aboutus'
 import Specialization from '../../Components/Specialization/Specialization'
+import Clients from '../../Components/Clients/Clients'
 const Home = () => {
   return (
     <div className='home'>
@@ -12,6 +13,7 @@ const Home = () => {
         <Slider/>
         <Aboutus/>
         <Specialization/>
+        <Clients/>
         <Footer/>
     </div>
   )
