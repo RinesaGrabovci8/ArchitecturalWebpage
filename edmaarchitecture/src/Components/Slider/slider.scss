@@ -1,0 +1,21 @@
+.slider{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    img{
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1170px) {
+    .slider {
+        height: 50vh; /* Adjust the height as needed for iPhone 12 Pro */
+    }
+
+    .slider img {
+        height: 50vh; /* Adjust the height as needed for iPhone 12 Pro */
+    }
+}

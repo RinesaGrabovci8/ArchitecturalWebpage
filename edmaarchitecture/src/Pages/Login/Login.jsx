@@ -17,7 +17,7 @@ const Login = () => {
 
         if (user) {
           localStorage.setItem('token', user.username);
-          navigate('/register'); 
+          navigate('/home'); 
         } else {
           alert('Invalid username or password. Please try again.');
         }

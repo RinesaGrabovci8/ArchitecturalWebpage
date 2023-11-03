@@ -1,0 +1,51 @@
+.navbar-container {
+    background: rgba(244, 242, 242, 0.7);
+    opacity: 10; /* Make the Navbar background transparent */
+    padding: 10px 0;
+    position: absolute; /* Position the Navbar absolutely */
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1; 
+    border-bottom: 2px solid #D32F2F;
+
+    .navbar-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      
+        .logo-link {
+          img {
+            max-width: 150px;
+          }
+        }
+      
+        .nav-links {
+          list-style: none;
+          padding: 0px;
+          display: flex;
+      
+          li {
+            margin: 0px 20px ;
+      
+            a {
+              color: #3d3c3cee;
+              text-decoration: none;
+              transition: color 0.3s;
+              white-space: nowrap;
+      
+              &:hover {
+                color: #D32F2F;
+              }
+            }
+          }
+        }
+      
+        
+    }
+  }
+  
+  

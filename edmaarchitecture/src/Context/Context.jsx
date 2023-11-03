@@ -7,16 +7,16 @@ const initialState = {
     token: localStorage.getItem("token"),
 };
 
-const Context = createContext(initialState);
-
-const ContextProvider = ({ children }) => {
+const Products = ({ children }) => {
     const [state, dispatch] = useReducer(Reducer, initialState);
-  
-    return( 
-    <Context.Provider value={{ state, dispatch }}>
-        {children}
-    </Context.Provider>
+
+    return (
+        <Context.Provider value={[state, dispatch]}>
+            {children}
+        </Context.Provider>
     )
 };
-  
-export { Context, ContextProvider };
+
+export const Context = createContext(initialState);
+
+export default Products;
