@@ -53,3 +53,9 @@
         }
     }
 }
+@media (max-width: 1440px) {
+    .specialization .specwrapper .icons {
+      flex-direction: column;
+      text-align: center; /* Change the layout to a column for smaller screens */
+    }
+}

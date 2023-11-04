@@ -59,4 +59,41 @@
       }
     }
   }
-  
+  @media (max-width: 600px) {
+    .about {
+      margin: 10px; // Adjust margin for smaller screens
+
+      h1{
+        margin-left: -60px;
+      }
+      p {
+        font-size: 16px; // Decrease font size for smaller screens
+        line-height: 1; // Increase line height for improved readability
+        max-width: 150%;
+        margin-left: -60px;
+      }
+
+      .more-button.MuiButton-containedPrimary{
+        margin-left: -60px;
+      }
+    }
+
+    .image {
+      // margin-top: -300px; // Adjust margin-top for smaller screens
+      display: none;
+      img {
+        // max-width: 100%; // Make the image responsive
+        // height: 100%; // Maintain the image's aspect ratio
+        // width: 70%; // Set a square aspect ratio
+        // max-height: 200px; // Limit the image's height
+        // margin-bottom: 200px;
+        // margin-left: 10px;
+      }
+    }
+
+
+    .topLeftBorder,
+    .bottomRightBorder {
+      display: none; // Hide the borders for smaller screens
+    }
+  }

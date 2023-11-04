@@ -46,4 +46,20 @@
       }
     }
   }
-  
+@media (max-width: 1440px) {
+  .clients .clientwrapper {
+    margin: 80px; /* Adjust the margin for smaller screens */
+  }
+
+  .clients .clientwrapper h1 {
+    font-size: 30px; /* Reduce the font size for smaller screens */
+  }
+
+  .clients .clientwrapper .icons .MuiGrid-item {
+    flex: 1; /* Reset the flex property for responsiveness */
+  }
+
+  .clients .clientwrapper .icons p {
+    font-size: 16px; /* Reduce the font size for smaller screens */
+  }
+}
