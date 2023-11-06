@@ -1,0 +1,48 @@
+.services {
+  background-color: #eeeeee;
+
+  .serviceswrapper {
+    margin: 85px auto;
+
+    .title {
+      h2 {
+        color: #d32f2f;
+        font-size: 40px;
+        margin: 40px 90px;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap; // Allow items to wrap to the next line
+      justify-content: space-between; // Distribute items evenly
+
+      .MuiGrid-item {
+        text-align: center;
+        flex: 0 0 calc(33.33% - 20px); // 33.33% width with spacing
+        margin-bottom: 20px; // Add margin to create space between items
+
+        button {
+          border: none;
+
+          .greyscale {
+            width: 100%; /* Set the width to 100% for consistent dimensions */
+            height: 200px; /* Set the desired height for all images */
+            object-fit: cover;
+            display: block;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+
+            &:hover {
+              filter: grayscale(0);
+            }
+          }
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -26,17 +26,20 @@
           text-align: center; 
           flex: 1; 
 
-          .greyscale {
-            filter: grayscale(100%);
-            transition: 0.5s ease-in-out;
-  
-            img {
-              max-width: 100%;
+          button{
+            border: none;
+            .greyscale {
+              filter: grayscale(100%);
+              transition: 0.5s ease-in-out;
+    
+              img {
+                max-width: 100%;
+              }
             }
-          }
-  
-          .greyscale:hover {
-            filter: grayscale(0%);
+    
+            .greyscale:hover {
+              filter: grayscale(0%);
+            }
           }
   
           p {

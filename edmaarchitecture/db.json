@@ -29,6 +29,150 @@
       "username": "adigrabovci",
       "password": "ggadi",
       "id": 9
+    },
+    {
+      "username": "rinesagrabovci",
+      "password": "rinesa2003",
+      "id": 10
+    },
+    {
+      "username": "rinesa",
+      "password": "ggrabovci",
+      "id": 11
+    }
+  ],
+  "clients": [
+    {
+      "name": "IRCON",
+      "image": "ircon.png",
+      "desc": "Ircon s.r.o. is a consulting and implementation company specializing in the preparation and execution of development projects in the fields of water, water management, environmental technologies, and agriculture. Our main activities include the implementation of projects for the creation, renewal, or reconstruction of wastewater collection and treatment systems, the supply of safe drinking water in challenging and hydrogeologically complex areas, addressing issues related to water scarcity for agricultural irrigation, and specialized projects related to the monitoring of drinking water quality."
+    },
+    {
+      "name": "TOPOL",
+      "image": "topol.png",
+      "desc": "Topol Water is a consulting and implementation company specializing in the preparation and execution of development projects in the field of water, water management, environmental technologies, and agriculture. Our main activities include the implementation of projects for the creation, renewal, or reconstruction of wastewater collection and treatment systems, the supply of safe drinking water in hard-to-reach and hydrogeologically challenging areas, addressing issues related to water scarcity for irrigation in agriculture, and specialized projects related to the monitoring of drinking water quality."
+    },
+    {
+      "name": "CZECH REPUBLIC",
+      "image": "czechrep.png",
+      "desc": "Czech Republic Development Cooperation is an initiative dedicated to fostering international collaboration and sustainable development worldwide. Through various programs and projects, it aims to address global challenges, reduce poverty, promote human rights, and contribute to the well-being of communities in need. The cooperation focuses on areas such as education, healthcare, infrastructure, and capacity-building, with a commitment to improving the quality of life and providing assistance to regions and countries facing economic and social hardships. By engaging in partnerships and supporting initiatives, Czech Republic Development Cooperation strives to create a more equitable and prosperous world for all."
+    },
+    {
+      "name": "KOSOVA REPUBLIC",
+      "image": "kosrep.png",
+      "desc": "Kosovo Republic Development Cooperation is a dedicated effort aimed at enhancing the socio-economic and infrastructural development of Kosovo. With a focus on building a sustainable and prosperous future for the region, this initiative works on a range of projects and collaborations. It endeavors to improve essential sectors such as education, healthcare, infrastructure, and governance, with the aim of creating a better quality of life for the people of Kosovo. Through partnerships, support programs, and capacity-building activities, Kosovo Republic Development Cooperation plays a crucial role in strengthening the nation's stability and fostering long-term growth. This initiative is committed to fostering prosperity and development within Kosovo, ultimately leading to a brighter and more promising future for its citizens."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "image": "project1.jpeg"
+    },
+    {
+      "name": "Project 2",
+      "image": "project2.jpeg"
+    },
+    {
+      "name": "Project 3",
+      "image": "project3.jpeg"
+    },
+    {
+      "name": "Project 4",
+      "image": "project4.jpg"
+    },
+    {
+      "name": "Project 5",
+      "image": "project5.jpg"
+    },
+    {
+      "name": "project 6",
+      "image": "project6.jpg"
+    },
+    {
+      "name": "Project 7",
+      "image": "project7.jpg"
+    },
+    {
+      "name": "Project 8",
+      "image": "project8.jpg"
+    },
+    {
+      "name": "Project 9",
+      "image": "project9.jpg"
+    },
+    {
+      "name": "Project 10",
+      "image": "project10.jpg"
+    },
+    {
+      "name": "Project 11",
+      "image": "project11.jpg"
+    },
+    {
+      "name": "Project 12",
+      "image": "project12.jpg"
+    },
+    {
+      "name": "Project 13",
+      "image": "project13.jpg"
+    },
+    {
+      "name": "Project 14",
+      "image": "project14.jpg"
+    },
+    {
+      "name": "Project 15",
+      "image": "project15.jpg"
+    },
+    {
+      "name": "Project 16",
+      "image": "project16.jpg"
+    },
+    {
+      "name": "Project 17",
+      "image": "project17.jpg"
+    },
+    {
+      "name": "Project 18",
+      "image": "project18.jpg"
+    },
+    {
+      "name": "Project 19",
+      "image": "project19.jpg"
+    },
+    {
+      "name": "Project 20",
+      "image": "project20.jpg"
+    }
+  ],
+  "services": [
+    {
+      "name": "Architectural Design",
+      "image": "architecturaldesign.jpg"
+    },
+    {
+      "name": "Site Analysis",
+      "image": "analysis.jpg"
+    },
+    {
+      "name": "Interior Design",
+      "image": "interior.jpg"
+    },
+    {
+      "name": "Urban Planning",
+      "image": "urban.jpg"
+    },
+    {
+      "name": "Project Management",
+      "image": "projectmanagment.jpg"
+    },
+    {
+      "name": "Sustainability and Green Building",
+      "image": "greenland.jpg"
+    },
+    {
+      "name": "Historic Preservation",
+      "image": "historical.jpg"
     }
   ]
 }

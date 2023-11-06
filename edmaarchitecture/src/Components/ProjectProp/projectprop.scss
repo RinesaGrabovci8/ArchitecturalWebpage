@@ -1,0 +1,29 @@
+.projectprop{
+    margin: 50px 130px;
+
+    h1{
+        color: #D32F2F;
+        font-size: 40px;
+    }
+
+    p{
+        color: #999797;
+        font-size: 17px;
+    }
+
+    button{
+        background-color: #D32F2F;
+        color: white;
+        padding: 20px 40px;
+        border:none;
+        border-radius: 5px;
+        margin: 10px auto;
+
+        &:hover{
+            background-color:whitesmoke;
+            border: 1px solid #D32F2F;
+            color: #D32F2F;
+            transition: 0.3s ease-in-out;
+        }
+    }
+}

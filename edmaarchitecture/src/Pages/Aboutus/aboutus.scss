@@ -1,0 +1,169 @@
+.about{
+    margin-top: 85px;
+    background-color: #EEEEEE;
+
+    .aboutwrapper{
+        margin-top: 85px;
+        margin-left: 30px;
+        background-color: #EEEEEE;
+
+        .titlee{
+            color: #D32F2F;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    
+
+        .firstpart{
+            display: block;
+            margin-left: 450px;
+
+            .text-block{
+                font-size: 30px;
+                white-space: nowrap;
+                margin-left: -115px;
+            }
+
+            .image-block{
+                img{
+                    height: 120%;
+                    width: 120%;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .secondpart{
+            margin: 150px 70px;
+            .dinamicnumbers{
+                background-color: white;
+                background-color: #EEEEEE;
+                    .box{
+                        width: 150px; 
+                        height: 150px; 
+                        background-color: white;
+
+                        .boxcontent{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center; 
+                            justify-content: center; 
+                            height: 100%;
+                            background-color: white;
+                            .number{
+                                color: #D32F2F;
+                                background-color: #EEEEEE;  
+                            }
+        
+                            p{
+                                background-color: white;
+                                color: #999797;
+                            }
+
+                        }
+    
+                        
+                    }
+                
+                
+            }
+
+            .desc{
+                .edmatitle{ 
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .p{
+                    color: #999797;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .thirdpart{
+            display: block;
+            text-align: center;
+            margin: 170px auto;
+        
+            .what{
+                letter-spacing: 3px;
+                color: #3d3c3cee;
+                font-family: 'Nunito', sans-serif;
+                margin-left: -60px;
+            }
+        
+            h1{
+                color: #D32F2F  ;
+                font-family: 'Nunito', sans-serif;
+                margin-bottom: 60px;
+                font-size: 37px;
+                margin-left: -60px;
+            }
+        
+            .icons{
+                display: flex;
+                text-align: center;
+                margin-bottom: 60px;
+                margin-top: -300px;
+
+               
+                .MuiGrid-item {
+                    position: relative;
+                    margin-left: -20px;
+
+                   
+                
+                    &:hover {
+                      img {
+                        transform: translateY(-10px);
+                        transition: transform 0.5s; 
+                      }
+                    }
+                }
+        
+                img{
+                    margin-bottom: 30px;
+                }
+        
+                h3{
+                    font-family: 'Nunito', sans-serif;
+                    margin-bottom: 20px;
+                    color: #D32F2F;
+                }
+        
+                p{
+                    text-align: left;
+                    margin-left: 80px;
+                    font-size: 17px;
+                    color: #999797;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .aboutwrapper {
+      .firstpart {
+        margin-left: 150px;
+      }
+  
+      .secondpart {
+        margin: 50px 20px;
+        .dinamicnumbers {
+          .box {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+  
+      .thirdpart {
+        .icons {
+          .MuiGrid-item {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
