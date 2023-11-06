@@ -11,6 +11,7 @@ import Architecture from './Pages/Architecture/Architecture';
 import Services from './Pages/Services/Services';
 import Projects from './Pages/Projects/Projects';
 import Contact from './Pages/Contact/Contact';
+// import Dashboard from './Pages/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/services' element={<Services />} /> 
         <Route path='/projects' element={<Projects />} /> 
         <Route path='/contact' element={<Contact />} /> 
+        {/* <Route path='/dashboard' element={<Dashboard />} />  */}
       </Routes>
     </BrowserRouter>
   );

@@ -64,6 +64,10 @@ const language = {
                 path:'/aboutus',
             },
             {
+                name:"DASHBOARD",
+                path:'/dashboard',
+            },
+            {
                 name:"ARCHITECTURE",
                 path:'/architecture',
             },

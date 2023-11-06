@@ -6,8 +6,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
-import { Transition } from 'react-transition-group';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Aboutus = () => {
     const [showImage, setShowImage] = useState(false);
@@ -27,7 +27,7 @@ const Aboutus = () => {
               Founded in 2010 by a team of engineering experts, it has completed more than 400 projects over a period of more than a decade with varying expertise in civil engineering and consulting. We strive to adapt our projects to the latest developments and to use cutting-edge technology, always focusing on the customer's wishes, which we consider the key to success. Our aim is to develop our projects with high quality, functionality, aesthetics, and usability by providing ideas and advice on what the space in which you live, work, or relax will look like.
             </Typography>
             <Button className='more-button' variant="contained" color="primary">
-              MORE...
+              <Link to='/aboutus'>MORE...</Link>
             </Button>
           </div>
         </Grid>
