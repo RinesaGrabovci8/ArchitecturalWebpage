@@ -53,7 +53,7 @@ const Register = () => {
                     label="Username"
                     name="username"
                     autoFocus
-                    value={username} // Link the value to the state
+                    value={username} 
                     onChange={(e) => setUsername(e.target.value)}
                     />
                     <TextField

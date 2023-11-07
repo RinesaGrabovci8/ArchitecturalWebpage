@@ -51,18 +51,18 @@
   }
 @media (max-width: 1440px) {
   .clients .clientwrapper {
-    margin: 80px; /* Adjust the margin for smaller screens */
+    margin: 80px;
   }
 
   .clients .clientwrapper h1 {
-    font-size: 30px; /* Reduce the font size for smaller screens */
+    font-size: 30px;
   }
 
   .clients .clientwrapper .icons .MuiGrid-item {
-    flex: 1; /* Reset the flex property for responsiveness */
+    flex: 1;
   }
 
   .clients .clientwrapper .icons p {
-    font-size: 16px; /* Reduce the font size for smaller screens */
+    font-size: 16px; 
   }
 }

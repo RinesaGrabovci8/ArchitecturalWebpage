@@ -12,15 +12,15 @@
     @media (max-width: 1440px) {
       .fullscreen-button {
         top: 30px; 
-        left: 900px; /* Adjust the left position as needed */
-        padding: 8px 8px; /* Adjust the padding as needed */
+        left: 900px;
+        padding: 8px 8px; 
       }
   
       @media (max-width: 768px) {
         .fullscreen-button {
-          top: 20px; /* Adjust the top position as needed */
-          left: 650px; /* Adjust the left position as needed */
-          padding: 6px 6px; /* Adjust the padding as needed */
+          top: 20px; 
+          left: 650px; 
+          padding: 6px 6px;
         }
       }
     }

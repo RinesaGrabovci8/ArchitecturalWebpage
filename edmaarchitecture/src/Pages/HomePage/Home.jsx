@@ -6,7 +6,7 @@ import Footer from '../../Components/Footer/Footer'
 import Aboutus from '../../Components/Aboutus/Aboutus'
 import Specialization from '../../Components/Specialization/Specialization'
 import Clients from '../../Components/Clients/Clients'
-// import Header from '../../Components/Navbar/Header'
+
 const Home = () => {
   return (
     <div className='home'>

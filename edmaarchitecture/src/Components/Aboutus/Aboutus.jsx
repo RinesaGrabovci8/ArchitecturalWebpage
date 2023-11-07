@@ -33,7 +33,6 @@ const Aboutus = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <div className='image'>
-            {/* <img style={{ height: "500px", weight: "500px", backgroundColor: 'black', opacity: '300', marginTop: '90px' }} src={house} alt="house" /> */}
             <LazyLoadImage
               alt="house"
               height={500}
