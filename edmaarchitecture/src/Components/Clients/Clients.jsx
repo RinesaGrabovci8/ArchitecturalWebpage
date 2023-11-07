@@ -7,6 +7,7 @@ import Modal from '../Modal/Modal';
 const Clients = () => {
   const [clientsData, setClientsData] = useState([]);
   const [singleData, setSingleData] = useState(null); 
+  
   useEffect(() => {
     axios.get('http://localhost:5000/clients')
       .then((response) => {

@@ -65,58 +65,72 @@
   ],
   "projects": [
     {
+      "id":"1",
       "name": "Project 1",
       "image": "project1.jpeg"
     },
     {
+      "id":"2",
       "name": "Project 2",
       "image": "project2.jpeg"
     },
     {
+      "id":"3",
       "name": "Project 3",
       "image": "project3.jpeg"
     },
     {
+      "id":"4",
       "name": "Project 4",
       "image": "project4.jpg"
     },
     {
+      "id":"5",
       "name": "Project 5",
       "image": "project5.jpg"
     },
     {
+      "id":"6",
       "name": "project 6",
       "image": "project6.jpg"
     },
     {
+      "id":"7",
       "name": "Project 7",
       "image": "project7.jpg"
     },
     {
+      "id":"8",
       "name": "Project 8",
       "image": "project8.jpg"
     },
     {
+      "id":"9",
       "name": "Project 9",
       "image": "project9.jpg"
     },
     {
+      "id":"10",
       "name": "Project 10",
       "image": "project10.jpg"
     },
     {
+      "id":"11",
       "name": "Project 11",
       "image": "project11.jpg"
     },
     {
+      "id":"12",
       "name": "Project 12",
       "image": "project12.jpg"
     },
     {
+      "id":"13",
       "name": "Project 13",
       "image": "project13.jpg"
     },
     {
+      "id":"14",
       "name": "Project 14",
       "image": "project14.jpg"
     },
@@ -125,22 +139,32 @@
       "image": "project15.jpg"
     },
     {
+      "id":"16",
       "name": "Project 16",
       "image": "project16.jpg"
     },
     {
+      "id":"17",
       "name": "Project 17",
       "image": "project17.jpg"
     },
     {
+      "id":"18",
       "name": "Project 18",
       "image": "project18.jpg"
     },
     {
+      "id":"19",
       "name": "Project 19",
       "image": "project19.jpg"
     },
     {
+      "id":"20",
+      "name": "Project 20",
+      "image": "project20.jpg"
+    },
+    {
+      "id":"21",
       "name": "Project 20",
       "image": "project20.jpg"
     }
@@ -148,31 +172,143 @@
   "services": [
     {
       "name": "Architectural Design",
-      "image": "architecturaldesign.jpg"
+      "image": "architecturaldesign.jpg",
+      "desc":"Architectural Design is the core of the architectural profession, embodying the creative and technical process of conceiving, planning, and crafting buildings and structures. Architects who specialize in architectural design are the visionary artists of the field, combining artistic expression with practicality. They turn concepts into tangible, aesthetically pleasing, and functional constructions. Architectural design is a delicate dance between form and function, as architects strive to create spaces that not only meet their clients' needs but also inspire and connect with the built environment. It's the art of transforming ideas into physical reality, shaping the world we live in and leaving a lasting imprint on our communities.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Site Analysis",
-      "image": "analysis.jpg"
+      "image": "analysis.jpg",
+      "desc":"Site Analysis is a fundamental aspect of architectural practice, serving as the foundation for sound design decisions. It involves a thorough examination and understanding of the physical, environmental, and contextual factors that influence the design and construction of a project. Architects who excel in site analysis scrutinize aspects such as topography, climate, infrastructure, surrounding landscapes, and cultural elements. This comprehensive assessment enables them to create designs that are not only aesthetically pleasing but also responsive to the unique conditions of the site. Site analysis is a critical first step in ensuring that architecture not only complements its surroundings but also functions optimally within its specific environment.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Interior Design",
-      "image": "interior.jpg"
+      "image": "interiordesign.jpg",
+      "desc":"Interior Design is the art of creating functional and aesthetically pleasing living and working spaces. It involves the meticulous arrangement of furniture, decor, color schemes, and lighting to transform an empty room into a harmonious, inviting, and practical environment. Interior designers work with clients to understand their preferences and needs, and they use their creative flair to optimize the use of space and create unique, personalized interiors. Through a careful selection of materials, textures, and elements, interior designers enhance the atmosphere and functionality of a space, making it not only visually appealing but also highly functional and comfortable for those who inhabit it.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Urban Planning",
-      "image": "urban.jpg"
+      "image": "urban.jpg",
+      "desc":"Urban Planning is the strategic and visionary discipline within architecture that seeks to shape the future of our cities and communities. It involves the thoughtful organization of land use, infrastructure, and public spaces to create sustainable, functional, and aesthetically pleasing environments. Urban planners address issues like transportation, housing, green spaces, and economic development, striving to enhance the quality of life for residents and promote social cohesion. Architects involved in urban planning contribute their expertise to design cities that are not just efficient but also harmonious, reflecting the values and aspirations of the people who inhabit them.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Project Management",
-      "image": "projectmanagment.jpg"
+      "image": "projectmanagment.jpg",
+      "desc":"Project Management in architecture is the crucial orchestration of various elements, from planning and design to construction and completion, ensuring that projects are executed efficiently and successfully. Architects who excel in project management take on the role of coordinators, overseeing timelines, budgets, and resources to bring a vision to fruition. They work as the glue that holds together diverse teams, and their organizational skills are paramount to delivering projects on time and within budget, all while maintaining the highest quality and meeting the client's objectives.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Sustainability and Green Building",
-      "image": "greenland.jpg"
+      "image": "greenbuilding.jpg",
+      "desc":"Sustainability and Green Building in architecture represent a commitment to environmentally responsible design and construction. It's about creating structures that minimize their impact on the environment, reduce resource consumption, and promote a healthier, more sustainable future. Architects who focus on sustainability and green building incorporate energy-efficient systems, renewable materials, and eco-friendly practices into their designs, working towards a more eco-conscious and sustainable world.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
     },
     {
       "name": "Historic Preservation",
-      "image": "historical.jpg"
+      "image": "historical.jpg",
+      "desc":"Historic Preservation in architecture is the art of protecting and conserving our architectural heritage. It involves meticulous research and restoration to maintain the historical authenticity and cultural significance of our architectural treasures, ensuring they continue to inspire and educate future generations while enriching the character of our communities.",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
+    }
+  ],
+  "architecture":[
+    {
+      "title":"-ARCHITECTURE-",
+      "desc":"Our priority is to design the best facilities and buildings for living, working, and leisure. We develop projects from conceptual design to final details, based on customer requirements and taking into account construction criteria and conditions, with the sole aim of ensuring the continuity of the conceptual design and the building with high quality. Good design, based on on-site perception, is the key to adequate and high-quality design. In this field of activity, our professional team of experienced architects, structural engineers, civil engineers, and detail planners plans above-ground structures equipped with a high technical standard. We comprehensively manage such projects in all phases, adhering to Swiss standards for healthcare, education,sports, administrative, hotel, and industrial buildings.",
+      "button":"VIEW PROJECTS",
+      "images": [
+        "archabovesky.jpg",
+        "archbuilding.jpg",
+        "archlibrary.jpg",
+        "archrome.jpg",
+        "archstairs.jpg"
+      ]
+    },
+    {
+      "title":"-ENERGY EFFICIENCY & RENEWABLE ENERGY-",
+      "desc":"Energy efficiency simply means using less energy to perform the same task – that is, eliminating energy waste. Energy efficiency brings a variety of benefits: reducing greenhouse gas emissions, reducing demand for energy imports, and lowering costs on a household and economy-wide level. While renewable energy technologies also help accomplish these objectives, improving energy efficiency is the cheapest – and often the most immediate – way to reduce the use of fossil fuels. There are enormous opportunities for efficiency improvements in every sector of the economy, whether it is buildings, transportation, industry, or energy generation. Buildings are an important field for energy efficiency improvements around the world because of their role as a major energy consumer. However, the question of energy use in buildings is not straightforward as the indoor conditions that can be achieved with energy use vary a lot. The measures that keep buildings comfortable, including lighting, heating, cooling, and ventilation, all consume energy. Typically, the level of energy efficiency in a building is measured by dividing energy consumed by the floor area of the building, which is referred to as specific energy consumption (SEC) or energy use intensity (EUI).",
+      "button":"VIEW PROJECTS",
+      "images": [
+        "energy1.jpg",
+        "energy2.jpg",
+        "energy3.jpg",
+        "energy4.jpg",
+        "energy5.jpg",
+        "energy6.jpg",
+        "energy7.jpg",
+        "energy8.jpg"
+      ]
+    },
+    {
+      "title":"-WATER & INFRASTRUCTURE-",
+      "desc":"Infrastructure is the fundamental facilities and systems serving a country, city or other area, including the services and facilities necessary for its economy to function. Infrastructure is composed of public and private physical improvements such as roads, railways, bridges, tunnels, water supply, sewers, electrical grids, and telecommunications (including Internet connectivity and broadband speeds). In general, it has also been defined as 'the physical components of interrelated systems providing commodities and services essential to enable, sustain, or enhance societal living conditions.' There are two general ways to view infrastructure: hard or soft. Hard infrastructure refers to the physical networks necessary for the functioning of a modern industry, including roads, bridges, railways, etc. Soft infrastructure refers to all the institutions that maintain the economic, health, social, and cultural standards of a country, including educational programs, official statistics, parks and recreational facilities, law enforcement agencies, and emergency services. Infrastructure is the term for the basic physical systems of a business or nation—transportation, communication, sewage, water, and electric systems are all examples of infrastructure. These systems tend to be high-cost investments and are vital to a country's economic development and prosperity. Projects related to infrastructure improvements may be funded publicly, privately, or through public-private partnerships. In economic terms, infrastructure often involves the production of public goods or production processes that support natural monopolies.",
+      "button":"VIEW PROJECTS",
+      "images": [
+        "bridge1.jpg",
+        "bridge2.jpg",
+        "bridge3.jpg",
+        "bridge4.jpg",
+        "bridge5.jpg",
+        "bridge6.jpg"
+      ]
+    }
+  ],
+  "designawards":[
+    {
+      "name":"Design Award 1st Place"
+    },
+    {
+      "name":"Design Award 2nd Place"
+    },
+    {
+      "name":"Design Award 1st Place"
+    },
+    {
+      "name":"Design Award 3rd Place"
     }
   ]
 }

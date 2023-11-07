@@ -64,10 +64,6 @@ const language = {
                 path:'/aboutus',
             },
             {
-                name:"DASHBOARD",
-                path:'/dashboard',
-            },
-            {
                 name:"ARCHITECTURE",
                 path:'/architecture',
             },
@@ -82,6 +78,10 @@ const language = {
             {
                 name:"CONTACT",
                 path:'/contact',
+            },
+            {
+                name:"LOG OUT",
+                path:'/',
             }
         ],
         footerLinks: [

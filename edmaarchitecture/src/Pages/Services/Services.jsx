@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
-import './services.scss';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
 import Modal from '../../Components/SliderModal/Modal';
-import architecturaldesign from '../../archslider';
+import './services.scss';
+import '../../Components/SliderModal/modal2.scss';
 
 const Services = () => {
   const [servicesData, setservicesData] = useState([]);
   const [singleData, setSingleData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     axios
@@ -22,39 +26,50 @@ const Services = () => {
       });
   }, []);
 
+  const openModal = (item) => {
+    setSingleData(item);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSingleData(null);
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className='services'>
+    <div className="services">
       <Navbar />
-      <div className='serviceswrapper'>
-        <div className='title'>
+      <div className="serviceswrapper">
+        <div className="title">
           <h2>-SERVICES-</h2>
         </div>
-        <div className='content'>
-          {servicesData.map((service, index) => (
-            <div className='MuiGrid-item' key={index}>
-              <p>{service.name}</p>
-              <button onClick={() => setSingleData(service)}>
-                <img
-                  className='greyscale'
-                  src={`${service.image}`}
-                  alt={service.name}
-                />
-              </button>
-            </div>
-          ))}
+        <div className="content">
+          <Grid container spacing={2}>
+            {servicesData.map((service, index) => (
+              <Grid item xs={12} sm={6} md={4} key={index}>
+                <Button onClick={() => openModal(service)}>
+                  <Card className="project-item">
+                    <img
+                      src={service.image}
+                      alt={service.name}
+                      style={{ width: '100%', height: '100%' }}
+                    />
+                    <CardContent>
+                      <p>{service.name}</p>
+                    </CardContent>
+                  </Card>
+                </Button>
+              </Grid>
+            ))}
+          </Grid>
         </div>
         {singleData && (
-          <Modal isOpen={!!singleData} close={() => setSingleData()} images={architecturaldesign} />
-        // <Modal
-        //   isOpen={!!singleData}
-        //   close={() => setSingleData(null)} // Make sure to clear singleData to close the modal
-        //   title={singleData.name} // Set the title for the modal
-        //   images={singleData.imageArray} // Provide an array of image URLs for the slider
-        // >
-        //   {/* Additional content, if any */}
-        //   <p style={{marginLeft:"40px", fontWeight:'bold', fontSize:'15px'}}>{singleData.name}</p>
-        //   <p style={{margin:'40px 40px'}}>{singleData.desc}</p>
-        // </Modal>
+          <Modal
+            isOpen={isModalOpen}
+            close={closeModal}
+            images={singleData.images}
+            description={singleData.desc}
+          />
         )}
       </div>
       <Footer />

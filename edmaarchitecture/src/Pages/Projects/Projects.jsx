@@ -8,6 +8,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const [projectsData, setProjectsData] = useState([]);
@@ -60,7 +61,7 @@ const Projects = () => {
                     <Typography variant="body2" color="textSecondary">
                       {project.description}
                     </Typography>
-                    <button className='see-more-button'>SEE MORE</button> {/* Add the "See More" button */}
+                    <button className='see-more-button'><Link to={`/projects/${project.id}`}>SEE MORE</Link></button> {/* Add the "See More" button */}
                   </CardContent>
                 </Card>
               </Grid>

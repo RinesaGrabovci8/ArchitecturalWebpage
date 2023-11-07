@@ -11,19 +11,21 @@ import Architecture from './Pages/Architecture/Architecture';
 import Services from './Pages/Services/Services';
 import Projects from './Pages/Projects/Projects';
 import Contact from './Pages/Contact/Contact';
+import SingleProject from './Pages/SinglePage/Singlepage';
 // import Dashboard from './Pages/Dashboard/Dashboard';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/aboutus' element={<Aboutus />} /> 
-        <Route path='/architecture' element={<Architecture />} /> 
-        <Route path='/services' element={<Services />} /> 
-        <Route path='/projects' element={<Projects />} /> 
+        <Route path='/' element={<Login/>} />
+        <Route path='/register' element={<Register/>} />
+        <Route path='/home' element={<Home/>} />
+        <Route path='/aboutus' element={<Aboutus/>} /> 
+        <Route path='/architecture' element={<Architecture/>} /> 
+        <Route path='/services' element={<Services/>} /> 
+        <Route path='/projects' element={<Projects/>} /> 
+        <Route path='/projects/:id' element={<SingleProject/>} /> 
         <Route path='/contact' element={<Contact />} /> 
         {/* <Route path='/dashboard' element={<Dashboard />} />  */}
       </Routes>

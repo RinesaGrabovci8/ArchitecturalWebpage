@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './modal.scss';
-import architecturaldesign from '../../archslider';
 
 const Modal = (props) => {
-  const { isOpen, close, children, title, images = [] } = props;
+  const { isOpen, close, images = [], description } = props;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Function to advance to the next image
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -16,17 +13,16 @@ const Modal = (props) => {
 
     if (isOpen) {
       document.body.classList.add('scroll-y');
-      // Automatically switch images with a timer
       intervalId = setInterval(() => {
         nextImage();
-      }, 3000); // Change image every 3 seconds (adjust as needed)
+      }, 3000); 
     } else {
       document.body.classList.remove('scroll-y');
-      clearInterval(intervalId); // Clear the interval when the modal is closed
+      clearInterval(intervalId); 
     }
 
     return () => {
-      clearInterval(intervalId); // Cleanup when the component unmounts
+      clearInterval(intervalId); 
     }
   }, [isOpen, images]);
 
@@ -35,21 +31,22 @@ const Modal = (props) => {
   }
 
   return (
-    <div className="modal" >
+    <div className="modal">
       <span className="btn-close-bg" onClick={() => close()}></span>
       <div className="content-modal">
         <button className="btn-close" onClick={() => close()}>
           X
         </button>
-        {title && <h2>{title}</h2>}
         <div className="image-slider">
           <img
             className="modal-image"
-            src={images[currentImageIndex].url}
+            src={images[currentImageIndex]}
             alt="image"
           />
         </div>
-        {children}
+        <div className="description">
+          {description}
+        </div>
       </div>
     </div>
   );

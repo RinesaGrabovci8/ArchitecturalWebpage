@@ -13,19 +13,54 @@ import axios from 'axios';
 const Aboutus = () => {
     const [projectData, setProjectData] = useState([]);
     const [projectCount, setProjectCount] = useState(0);
+    const [awardData, setawardData] = useState([]);
+    const [awardcount, setawardcount] = useState(0);
+    const [clientsdata, setclientsdata] = useState([]);
+    const [clientcount, setclientcount] = useState(0);
 
-  const projects = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/projects');
-      setProjectData(response.data.projects);
-      setProjectCount(response.data.projects.length);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+    const projects = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/projects');
+        console.log('Data fetched:', response.data);
+        setProjectData(response.data.projects);
+        const length = response.data.length;
+        setProjectCount(length);
+        console.log('Project count updated:',length);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    const awards = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/designawards');
+        console.log('Data fetched:', response.data);
+        setawardData(response.data.designawards);
+        const length = response.data.length;
+        setawardcount(length);
+        console.log('Project count updated:',length);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    const clients = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/clients');
+        console.log('Data fetched:', response.data);
+        setclientsdata(response.data.clients);
+        const length = response.data.length;
+        setclientcount(length);
+        console.log('Project count updated:',length);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
   useEffect(() => {
     projects(); 
+    awards();
+    clients();
   }, []);
   return (
     <div className="about">
@@ -66,25 +101,37 @@ const Aboutus = () => {
                   <Grid item xs={12} sm={6}>
                   <div className="box">
                       <div className='boxcontent'>
-                      <p className='number'>20</p>
+                      {clientcount ? (
+                        <p className='number'>{clientcount}</p>
+                      ) : (
+                        <p>Loading...</p>
+                      )}
                       <p>SATISFIED COSTUMERS</p>
                       </div>
                     </div>
                   </Grid>
                   <Grid item xs={12} sm={6}>
-                    <div className="box">
-                      <div className='boxcontent'>
-                      <p className='number'>{projectCount}</p>
+                  <div className="box">
+                    <div className='boxcontent'>
+                      {projectCount ? (
+                        <p className='number'>{projectCount}</p>
+                      ) : (
+                        <p>Loading...</p>
+                      )}
                       <p>COMPLETED PROJECTS</p>
-                      </div>
                     </div>
+                  </div>
                   </Grid>
                   <Grid item xs={12} sm={6}>
                   <div className="box">
-                      <div className='boxcontent'>
-                      <p className='number'>20</p>
+                  <div className='boxcontent'>
+                      {awardcount ? (
+                        <p className='number'>{awardcount}</p>
+                      ) : (
+                        <p>Loading...</p>
+                      )}
                       <p>DESIGN AWARDS</p>
-                      </div>
+                    </div>
                     </div>
                   </Grid>
                 </Grid>
